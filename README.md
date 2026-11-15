@@ -1,34 +1,51 @@
-# Discord Setup
+# Discord overlay
 
-This page assists users who require a guide to setup their discord overlay
+Ascendency draws through Discord’s **new Game Overlay**. If that overlay is off, legacy overlay is still on, or the game is exclusive fullscreen, the menu will not show.
+
+{% hint style="info" %}
+Use the Discord **desktop** app. The browser client has no overlay.
+{% endhint %}
 
 {% stepper %}
 {% step %}
-### Go to your Discord settings
+### Open Discord settings
 
-Locate the settings icon at the bottom left of your discord application.
+In the desktop app, click the **gear** next to your username (bottom left).
 {% endstep %}
 
 {% step %}
-### Find "Game Overlay"
+### Game Overlay
 
-Find the game overlay section and copy these settings.
+In the left sidebar, open **Game Overlay** and set it like this:
 
-1. Find game overlay and make sure that **legacy overlay is off**.
-2. Find **Enable overlay** and enable the new overlay.
-3. Make sure that the new overlay is enabled on whatever game you are planning on using Ascendency on.
+| Setting | Value |
+| --- | --- |
+| Enable Overlay | **On** |
+| Enable Legacy Overlay | **Off** |
+| Your game (e.g. Rob Run) | Overlay **on** for that title |
 
-<figure><img src=".gitbook/assets/game-overlay.png" alt="Discord Game Overlay: Enable Overlay on, Enable Legacy Overlay off"><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/game-overlay.png" alt="Discord Game Overlay panel"><figcaption>Game Overlay — new overlay on, legacy off, enabled for the game you are injecting.</figcaption></figure>
+{% endstep %}
 
-1. Head to **System** and enable hardware acceleration.
+{% step %}
+### Hardware acceleration
 
-<figure><img src=".gitbook/assets/hardware-acceleration.png" alt="Discord Enable Hardware Acceleration on"><figcaption></figcaption></figure>
+Open **System** (sometimes under Advanced) and turn **Enable Hardware Acceleration** on.
 
-{% hint style="warning" %}
-Make sure that you see the discord overlay is initialized before trying to press "OK" in the menu / lobby.
+<figure><img src=".gitbook/assets/hardware-acceleration.png" alt="Discord Hardware Acceleration enabled"><figcaption></figcaption></figure>
+{% endstep %}
 
-1. Wait up to a minute or until you see the discord overlay pop up on your screen.
-2. For the new discord overlay to show you must be in **windowed full screen**.
-{% endhint %}
+{% step %}
+### Display mode
+
+The new overlay only works in **windowed** or **borderless / windowed fullscreen**. Exclusive fullscreen hides it.
 {% endstep %}
 {% endstepper %}
+
+{% hint style="warning" %}
+Wait until overlay is actually up before you press OK in the loader.
+
+1. Start Ascendency first — on Windows 11 it relaunches Discord with `--disable-direct-composition`.
+2. Give Discord up to about a minute. You should see overlay initialise on the game (the status in Game Overlay).
+3. Then join. Press `+` / Numpad `+` once the overlay is live.
+{% endhint %}
