@@ -1,3 +1,3 @@
 # Summary
 
-* [Discord Setup](README.md)
+* [Discord overlay](README.md)
