@@ -1,10 +1,6 @@
 # Discord overlay
 
-Ascendency draws through Discord’s **new Game Overlay**. If that overlay is off or legacy overlay is still on, the menu will not show.
-
-{% hint style="info" %}
-Use the Discord **desktop** app. The browser client has no overlay.
-{% endhint %}
+Ascendency draws through Discord’s Game Overlay. Use the Discord **desktop** app — the browser client has no overlay.
 
 {% stepper %}
 {% step %}
@@ -21,10 +17,10 @@ In the left sidebar, open **Game Overlay** and set it like this:
 | Setting | Value |
 | --- | --- |
 | Enable Overlay | **On** |
-| Enable Legacy Overlay | **Off** |
+| Enable Legacy Overlay | **On** |
 | Your game (e.g. Rob Run) | Overlay **on** for that title |
 
-<figure><img src=".gitbook/assets/game-overlay.png" alt="Discord Game Overlay panel"><figcaption>Game Overlay — new overlay on, legacy off, enabled for the game you are injecting.</figcaption></figure>
+<figure><img src=".gitbook/assets/game-overlay.png" alt="Discord Game Overlay panel"><figcaption>Game Overlay — Enable Overlay and Legacy Overlay on, enabled for the game you are injecting.</figcaption></figure>
 {% endstep %}
 
 {% step %}
