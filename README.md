@@ -1,21 +1,34 @@
-# Ascendency support
+# Discord Setup
 
-Guides, overlay setup, and every error code the loader can show. If a page does not cover your issue, open a ticket in Discord — but only after you have followed the listed steps.
+This page assists users who require a guide to setup their discord overlay
+
+{% stepper %}
+{% step %}
+### Go to your Discord settings
+
+Locate the settings icon at the bottom left of your discord application.
+{% endstep %}
+
+{% step %}
+### Find "Game Overlay"
+
+Find the game overlay section and copy these settings.
+
+1. Find game overlay and make sure that **legacy overlay is off**.
+2. Find **Enable overlay** and enable the new overlay.
+3. Make sure that the new overlay is enabled on whatever game you are planning on using Ascendency on.
+
+<figure><img src=".gitbook/assets/game-overlay.png" alt="Discord Game Overlay: Enable Overlay on, Enable Legacy Overlay off"><figcaption></figcaption></figure>
+
+1. Head to **System** and enable hardware acceleration.
+
+<figure><img src=".gitbook/assets/hardware-acceleration.png" alt="Discord Enable Hardware Acceleration on"><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
-Work through the whole page for your error. Skipping steps is the usual reason a ticket comes back unsolved.
+Make sure that you see the discord overlay is initialized before trying to press "OK" in the menu / lobby.
+
+1. Wait up to a minute or until you see the discord overlay pop up on your screen.
+2. For the new discord overlay to show you must be in **windowed full screen**.
 {% endhint %}
-
-- [Discord setup](overlay/discord-setup.md) — turn on the new Game Overlay so Ascendency can draw.
-- [Download and login](getting-started/download-and-login.md) — get the loader, run it as admin, enter your key.
-- [Error list](errors/README.md) — 0xA01 driver, 0xA06 auth, overlay 0xE1, and the rest.
-- [Prerequisites](getting-started/prerequisites.md) — Windows, Discord desktop, VC++, DirectX, admin.
-
-## Before you ticket
-
-- Use the Discord **desktop** app, not the browser.
-- Enable the new Game Overlay and turn Legacy Overlay off.
-- Play in borderless / windowed fullscreen.
-- Run `rob_run_handshake.exe` as administrator.
-
-Support: https://discord.gg/UcwbbJYAK
+{% endstep %}
+{% endstepper %}
