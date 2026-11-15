@@ -1,0 +1,11 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: Ascendency Docs
+  structure:
+    - type: space
+      key: documentation
+      title: Documentation
+      path: docs
+      default: true
+      content:
+        directory: ./
